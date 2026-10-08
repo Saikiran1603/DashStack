@@ -1,0 +1,10 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+@layer base{body{@apply bg-page text-ink font-sans text-sm dark:bg-dpage dark:text-white}}
+@layer components{
+.card{@apply bg-white dark:bg-dcard rounded-[14px] p-5 shadow-[6px_6px_54px_rgba(0,0,0,0.05)]}
+.btn{@apply bg-brand text-white rounded-md px-4 py-2 font-semibold hover:opacity-90}
+.btn2{@apply bg-[#F1F4F9] dark:bg-dline rounded-md px-4 py-2 font-semibold text-xs}
+.chip{@apply rounded-full border border-slate-300 dark:border-dline px-3 py-1 text-xs}
+.chip-on{@apply bg-brand border-brand text-white}
+.th{@apply text-left font-bold py-3 px-3 whitespace-nowrap}
+.td{@apply py-3 px-3 whitespace-nowrap border-t border-slate-100 dark:border-dline}}
