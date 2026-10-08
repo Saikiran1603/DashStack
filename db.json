@@ -1,0 +1,322 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Apple Watch Series 4",
+      "price": 5000,
+      "reviews": 131,
+      "category": "Electronics",
+      "stock": 63,
+      "favorite": true
+    },
+    {
+      "id": 2,
+      "name": "Air-Max-270",
+      "price": 60,
+      "reviews": 64,
+      "category": "Fashion",
+      "stock": 64,
+      "favorite": true
+    },
+    {
+      "id": 3,
+      "name": "Minimal Chair Tool",
+      "price": 24.59,
+      "reviews": 63,
+      "category": "Furniture",
+      "stock": 63,
+      "favorite": false
+    },
+    {
+      "id": 4,
+      "name": "Amazfit Vip",
+      "price": 70,
+      "reviews": 40,
+      "category": "Electronics",
+      "stock": 40,
+      "favorite": false
+    },
+    {
+      "id": 5,
+      "name": "Gumbo Mouse",
+      "price": 30.12,
+      "reviews": 22,
+      "category": "Accessories",
+      "stock": 22,
+      "favorite": false
+    },
+    {
+      "id": 6,
+      "name": "Beats Headphone",
+      "price": 89,
+      "reviews": 18,
+      "category": "Electronics",
+      "stock": 18,
+      "favorite": false
+    },
+    {
+      "id": 7,
+      "name": "Microsoft Headsquare",
+      "price": 190,
+      "reviews": 52,
+      "category": "Electronics",
+      "stock": 52,
+      "favorite": false
+    },
+    {
+      "id": 8,
+      "name": "Women's Dress",
+      "price": 64,
+      "reviews": 45,
+      "category": "Fashion",
+      "stock": 35,
+      "favorite": false
+    },
+    {
+      "id": 9,
+      "name": "Samsung A50",
+      "price": 400,
+      "reviews": 67,
+      "category": "Mobile",
+      "stock": 67,
+      "favorite": false
+    },
+    {
+      "id": 10,
+      "name": "Camera",
+      "price": 420,
+      "reviews": 52,
+      "category": "Electronics",
+      "stock": 52,
+      "favorite": false
+    },
+    {
+      "id": 11,
+      "name": "Classic Leather Handbag",
+      "price": 95,
+      "reviews": 38,
+      "category": "Fashion",
+      "stock": 29,
+      "favorite": false
+    },
+    {
+      "id": 12,
+      "name": "Wireless Earbuds",
+      "price": 49.99,
+      "reviews": 84,
+      "category": "Electronics",
+      "stock": 120,
+      "favorite": false
+    },
+    {
+      "id": 13,
+      "name": "Ceramic Table Lamp",
+      "price": 38.5,
+      "reviews": 27,
+      "category": "Home",
+      "stock": 44,
+      "favorite": false
+    },
+    {
+      "id": 14,
+      "name": "Running Shoes Pro",
+      "price": 110,
+      "reviews": 76,
+      "category": "Fashion",
+      "stock": 31,
+      "favorite": false
+    },
+    {
+      "id": 15,
+      "name": "Portable Bluetooth Speaker",
+      "price": 55,
+      "reviews": 91,
+      "category": "Electronics",
+      "stock": 73,
+      "favorite": false
+    },
+    {
+      "id": 16,
+      "name": "Stainless Water Bottle",
+      "price": 18.99,
+      "reviews": 56,
+      "category": "Home",
+      "stock": 180,
+      "favorite": false
+    },
+    {
+      "id": 17,
+      "name": "Mechanical Keyboard",
+      "price": 79,
+      "reviews": 43,
+      "category": "Accessories",
+      "stock": 26,
+      "favorite": false
+    },
+    {
+      "id": 18,
+      "name": "Desk Organizer Set",
+      "price": 22,
+      "reviews": 19,
+      "category": "Home",
+      "stock": 58,
+      "favorite": false
+    },
+    {
+      "id": 19,
+      "name": "Polarized Sunglasses",
+      "price": 34.5,
+      "reviews": 33,
+      "category": "Fashion",
+      "stock": 47,
+      "favorite": false
+    },
+    {
+      "id": 20,
+      "name": "Smart Home Hub",
+      "price": 129,
+      "reviews": 62,
+      "category": "Electronics",
+      "stock": 24,
+      "favorite": false
+    },
+    {
+      "id": 21,
+      "name": "Travel Backpack",
+      "price": 68,
+      "reviews": 48,
+      "category": "Accessories",
+      "stock": 39,
+      "favorite": false
+    },
+    {
+      "id": 22,
+      "name": "Fitness Tracker Band",
+      "price": 42,
+      "reviews": 71,
+      "category": "Electronics",
+      "stock": 86,
+      "favorite": false
+    },
+    {
+      "id": 23,
+      "name": "Memory Foam Pillow",
+      "price": 31.99,
+      "reviews": 29,
+      "category": "Home",
+      "stock": 64,
+      "favorite": false
+    },
+    {
+      "id": 24,
+      "name": "USB-C Charging Dock",
+      "price": 26,
+      "reviews": 37,
+      "category": "Accessories",
+      "stock": 92,
+      "favorite": false
+    },
+    {
+      "id": 25,
+      "name": "Compact Coffee Maker",
+      "price": 84,
+      "reviews": 54,
+      "category": "Home",
+      "stock": 21,
+      "favorite": false
+    }
+  ],
+  "team": [
+    {
+      "id": 1,
+      "name": "Jason Price",
+      "role": "Admin",
+      "email": "janick_parisian@yahoo.com",
+      "phone": ""
+    },
+    {
+      "id": 2,
+      "name": "Jukkoe Sisao",
+      "role": "CEO",
+      "email": "sibyl_kozey@gmail.com",
+      "phone": ""
+    },
+    {
+      "id": 3,
+      "name": "Harriet King",
+      "role": "CTO",
+      "email": "nadia_block@hotmail.com",
+      "phone": ""
+    },
+    {
+      "id": 4,
+      "name": "Lenora Benson",
+      "role": "Lead",
+      "email": "tel.wallace@kunde.us",
+      "phone": ""
+    },
+    {
+      "id": 5,
+      "name": "Olivia Reese",
+      "role": "Strategist",
+      "email": "kemmer.hutta@cremin.us",
+      "phone": ""
+    },
+    {
+      "id": 6,
+      "name": "Bertha Valdez",
+      "role": "CEO",
+      "email": "kraine.koelpin@tromp.io",
+      "phone": ""
+    },
+    {
+      "id": 7,
+      "name": "Harriett Payne",
+      "role": "Digital Marketer",
+      "email": "nunnie_west@estrella.tv",
+      "phone": ""
+    },
+    {
+      "id": 8,
+      "name": "George Bryant",
+      "role": "Social Media",
+      "email": "delmer.kling@gmail.com",
+      "phone": ""
+    },
+    {
+      "id": 9,
+      "name": "Lily French",
+      "role": "Strategist",
+      "email": "lucienne.herman@hotmail.com",
+      "phone": ""
+    },
+    {
+      "id": 10,
+      "name": "Howard Adkins",
+      "role": "CEO",
+      "email": "wiegand.leonel@herman.us",
+      "phone": ""
+    },
+    {
+      "id": 11,
+      "name": "Earl Bowman",
+      "role": "Digital Marketer",
+      "email": "waino_attersworth@nicolette.tv",
+      "phone": ""
+    },
+    {
+      "id": 12,
+      "name": "Patrick Padilla",
+      "role": "CEO",
+      "email": "patrick.padilla@mail.com",
+      "phone": ""
+    },
+    {
+      "name": "sai",
+      "email": "iuipo@kjhlj",
+      "phone": "13e141",
+      "role": "frontend",
+      "id": 13
+    }
+  ]
+}

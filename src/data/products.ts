@@ -1,1 +1,0 @@
-export const items=[['Apple Watch Series 4','$120.00',131],['Air-Max-270','$60.00',64],['Minimal Chair Tool','$24.59',63],['Amazfit Vip','$70.00',40],['Gumbo Mouse','$30.12',22],['Beats Headphone','$89.00',18]]
