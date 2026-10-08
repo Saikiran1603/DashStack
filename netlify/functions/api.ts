@@ -1,11 +1,10 @@
-import {getStore} from '@netlify/blobs'
-import type {Handler,HandlerResponse} from '@netlify/functions'
+import {connectLambda,getStore} from '@netlify/blobs'
+import type {Handler,HandlerEvent,HandlerResponse} from '@netlify/functions'
 import seed from '../../db.json'
 
 type Item={id:number}&Record<string,unknown>
 type Database={products:Item[],team:Item[]}
 
-const store=getStore('dashstack-database')
 const databaseKey='data'
 const jsonHeaders={'Content-Type':'application/json; charset=utf-8'}
 const json=(statusCode:number,body:unknown):HandlerResponse=>({
@@ -14,7 +13,7 @@ const json=(statusCode:number,body:unknown):HandlerResponse=>({
   body:JSON.stringify(body)
 })
 
-async function readDatabase():Promise<Database>{
+async function readDatabase(store:ReturnType<typeof getStore>):Promise<Database>{
   const existing=await store.get(databaseKey,{type:'json'}) as Database|null
   if(existing)return existing
   const initial=seed as Database
@@ -23,6 +22,13 @@ async function readDatabase():Promise<Database>{
 }
 
 export const handler:Handler=async event=>{
+  const blobsEvent=event as HandlerEvent&{blobs:string}
+  const blobHeaders:Record<string,string>={}
+  for(const [name,value] of Object.entries(event.headers)){
+    if(value!==undefined)blobHeaders[name]=value
+  }
+  connectLambda({blobs:blobsEvent.blobs,headers:blobHeaders})
+  const store=getStore('dashstack-database')
   const path=new URL(event.rawUrl??event.path,'https://netlify.local').pathname
   const segments=path.split('/').filter(Boolean)
   const apiIndex=segments.lastIndexOf('api')
@@ -39,7 +45,7 @@ export const handler:Handler=async event=>{
   }
 
   try{
-    const database=await readDatabase()
+    const database=await readDatabase(store)
     const records=database[resource]
     const method=event.httpMethod
 
